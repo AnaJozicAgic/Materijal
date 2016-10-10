@@ -27,7 +27,8 @@ h6 {
     font-weight: 700;
     margin: 0 0 15px;
 }
-body { font-family: 'Titillium Web', sans-serif; }
+body { font-family: 'Titillium Web', sans-serif; margin: 0;
+padding: 0; }
 
 
 
@@ -153,7 +154,7 @@ z-index: 999;}
 .mainmenu-area .nav > li > a:focus {color: #000}
 
 .slider-area {clear: both}
-.slider-area, .promo-area, .brands-area, .maincontent-area, .footer-top-area, .product-widget-area, .product-breadcroumb-area, .product-area {position: relative;overflow: hidden}
+.slider-area, .promo-area, .brands-area, .maincontent-area, .footer-top-area, .product-widget-area, .product-breadcroumb-area, .product-area {position: relative;overflow: hidden; margin: 0; padding: 0;}
 .zigzag-bottom {}
 .slide-text-wrapper {
   height: 700px;
@@ -170,9 +171,12 @@ bottom: -80px;
 height: 165px;
 left: -5%;
 position: absolute;
-transform: rotate(6deg);
+transform: rotate(175deg);
 width: 108%;
 z-index: 9;
+    margin: 0;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
 }
 
 .slide-bg {
@@ -236,7 +240,7 @@ z-index: 9;
 }
 
 .brands-area {
-  background: none repeat scroll 0 0 #4084bf;
+  background: none repeat scroll 0 0 rgba(0, 0, 120, 0.15);
   color: #fff;
   padding: 0px 0 100px;
 }
@@ -381,18 +385,17 @@ z-index: 9;
 
 
 .single-wid-product {
+
     height: 160px;
-    background-color: rgba(1, 188, 241, 0.3);
-    margin: 0 auto;
-    margin-bottom: 31px;
+    margin: 0;
+  
     overflow: hidden;
     
 }
 .single-wid-product2 {
     height: 160px;
-    background-color: rgba(5, 104, 175, 0.3);
-    margin: 0 auto;
-    margin-bottom: 31px;
+    margin: 0;
+
     overflow: hidden;
 }
 .single-wid-product-profil {
@@ -403,17 +406,17 @@ z-index: 9;
 }
 .product-thumb {
     float: left;
-    height: 120px;
+    height: 220px;
     margin-top: 15px;
-    margin-left: 15px;
-    width: 200px;
+    margin-left: 30px;
+    width: 300px;
 }
 .product-thumb2 {
     float: right;
-    height: 120px;
-    margin-right: 15px;
-    width: 200px;
-     margin-top: 15px;
+    height: 220px;
+    margin-right: 25px;
+    width: 300px;
+    margin-top: 15px;
 }
 .product-thumb-profil {
     float: left;
@@ -422,7 +425,19 @@ z-index: 9;
     margin-left: 15px;
     width: 200px;
 }
-.product-corner{
+
+#full {
+
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+/*.product-corner{
     float: right; 
     width: 0;
 	height: 0;
@@ -437,7 +452,7 @@ z-index: 9;
 	border-top: 80px solid transparent;
 	border-left: 200px solid #01bcf1;
 	border-bottom: 80px solid transparent;
-}
+}*/
 .product-corner-profil{
     float: right; 
     width: 0;
@@ -519,21 +534,25 @@ z-index: 9;
 .wid-view-more:hover {color: #fff;background-color: #222;text-decoration: none}
 .single-product-widget {
     position: relative;
+    width: 100%;
 }
 .product-widget-area {
   padding-bottom: 150px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
    
 }
-.product-widget-area .zigzag-bottom{background: #4084bf}
-.footer-top-area .zigzag-bottom{background: #4084bf}
+.product-widget-area .zigzag-bottom{ background: rgba(0, 0, 80, 0.4)}
+.footer-top-area .zigzag-bottom{background: rgba(0, 0, 80, 0.4)}
 .footer-top-area {background: none repeat scroll 0 0 #333;
 color: #999;
 padding: 35px 0 180px;}
 
 
-.footer-bottom-area {background: #4084bf;color: #fff}
+.footer-bottom-area {margin: 0;padding: 0; background: rgba(0, 0, 80, 0.4);color: #fff}
 .footer-about-us span {
-  color: #4084bf;
+  color: rgba(0, 0, 80, 0.4);
 }
 .footer-wid-title {
   font-family: raleway;
@@ -600,9 +619,9 @@ padding: 35px 0 180px;}
 a {color: #1abc9c}
 a:hover, a:focus {color: #17a78b}
 .footer-bottom-area {
-  background: none repeat scroll 0 0 #4084bf;
+  background: none repeat scroll 0 0 rgba(0, 0, 80, 0.4);
   color: #fff;
-  padding-bottom: 40px;
+padding-bottom: 40px;
 }
 
 
@@ -668,7 +687,7 @@ width: 10px;
   padding: 50px 0;color: #fff;
 }
 
-.single-product-area .zigzag-bottom {background-color: #333333}
+.single-product-area .zigzag-bottom {margin: 0; padding: 0; background-color: #333333}
 
 .single-product-area {
   padding: 80px 0 130px;
@@ -1102,7 +1121,11 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
   color: #1abc9c;
 }
 #logoBild{
-    height: 166px;
-
-    margin-left: 41%;
+    padding-top: 15px;
+    height: 160px;
+    width: 350px;
+   
+   
+    margin-left: 40px;
+   
 }
